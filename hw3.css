@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: orange;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, auto);
+  height: 60px;
+  align-items: center;
+}
+
+.logo {
+  background-color: lightskyblue;
+  border: 0.5 px solid whitesmoke;
+  border-radius: 90px;
+  padding: 10px;
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.link {
+  background-color: lightskyblue;
+  padding: 10px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  height: 30px;
+  display: none;
+}
+
+.image {
+  background-image: url(https://i.pinimg.com/736x/27/a6/50/27a650920458ff332a76d579f55f0f5d.jpg);
+  text-align: center;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.bluePart {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: row;
+}
+.blueBox {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 60px;
+  margin: 50px auto;
+}
+.boxes {
+  background-color: white;
+  width: 300px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+}
+.picture {
+  background-image: url(https://img.freepik.com/premium-photo/top-view-workspace-background-concept-with-laptop-camera-supplies-copy-space-white-table_67155-18566.jpg?w=2000);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 130px;
+  height: 130px;
+  transform: translate(-20%, -20%);
+  border-radius: 80px;
+  background-size: cover;
+}
+.redBox {
+  background-color: rosybrown;
+  position: absolute;
+  top: -65px;
+  left: 260px;
+  width: 65px;
+  height: 65px;
+  transform: translate(70%, 70%);
+  border-radius: 50px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: xx-large;
+}
+.lastBox {
+  background-color: orange;
+  display: grid;
+  justify-content: space-between;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 1300px) {
+  .blueBox {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .blueBox {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boxes {
+    width: 250px;
+  }
+  .picture {
+    width: 75px;
+    height: 75px;
+  }
+
+  .redBox {
+    width: 50px;
+    height: 50px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
